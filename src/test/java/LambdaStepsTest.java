@@ -19,7 +19,7 @@ public class LambdaStepsTest extends TestBase {
 
         step("Find the " + REPOSITORY + " repository ", (s) -> {
             $(byName("q")).setValue(REPOSITORY).submit();
-            $(byLinkText("eroshenkoam/allure-example")).click();
+            $(byLinkText(REPOSITORY)).click();
         });
 
         step("Open the Issues tab", (s) -> {
